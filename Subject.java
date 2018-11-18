@@ -75,4 +75,8 @@ String getName() {
         this.name = name;
         this.time = time;
     }
+    public Subject(Subject other) {
+        this.time = other.time;
+        name=new String(other.getName());
+    }
 }
